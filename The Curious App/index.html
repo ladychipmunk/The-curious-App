@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html ng-app="curiousApp">
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body class="container" ng-controller="PlacesController as places">
+    <div class="product row" ng-repeat="spot in places.spots">
+      <h3>
+        {{spot.name}}
+        <em class="pull-right">{{spot.info}}</em>
+      </h3>
+      <img src="{{spot.photo}}"></img>
+      <button>See Spot</button>
+    </div>
+  </body>
+</html>
